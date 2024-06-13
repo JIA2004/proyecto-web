@@ -1,11 +1,71 @@
 :root {
-  --primary-color: #9D3FE7;
-  --secondary-color: #D9D9D9;
-  --white: #ffffff;
-  --black: #000000;
+    --primary-color: #9D3FE7;
+    --secondary-color: #D9D9D9;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    & h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: var(--primary-color);
+        font-size: 5vh;
+    }
+}
+
+.main-div {
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    width: 1000px;
+    text-align: center;
+    padding: 50px 80px 50px 80px;
+    margin-bottom: 150px;
+    & h2 {
+        color: #7C7C7C;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        padding-top: 30px;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+.flechas {
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 45%;
+}
+
+nav {
+    position: absolute;
+    & ul{
+        & li {
+            display: inline-block;
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.man {
+    position: absolute;
+    margin-right: 80%;
+    margin-top: 10%;
 }
