@@ -68,7 +68,7 @@ body {
 .main-div {
     background-color: var(--secondary-color);
     border-radius: 25px;
-    width: 1200px;
+    width: 900px;
     text-align: center;
     padding: 50px 80px 50px 80px;
     margin-bottom: 150px;
@@ -99,11 +99,25 @@ body {
 nav {
     position: absolute;
     & ul{
+        list-style-type: none; /* Quita los estilos de lista por defecto */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Usa flexbox para alinear los elementos */
+        justify-content: space-between;
         & li {
-            display: inline-block;
+            padding: 10px 15px;
             & a {
+                color: var(--black);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
                 text-decoration: none;
             }
         }
     }
+}
+
+#signup {
+    margin-left: auto;
 }
