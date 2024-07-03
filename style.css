@@ -24,7 +24,7 @@ body {
 
 .button {
     background-color: var(--primary-color);
-    border-radius: 15px;
+    border-radius: 25px;
     color: var(--white);
     padding: 15px 25px;
     text-decoration: none;
@@ -65,6 +65,12 @@ body {
     }
 }
 
+.logo {
+    & img {
+        width: 200px;
+    }
+}
+
 .main-div {
     background-color: var(--secondary-color);
     border-radius: 25px;
@@ -97,26 +103,22 @@ body {
 }
 
 nav {
-    position: absolute;
-    & ul{
-        list-style-type: none; /* Quita los estilos de lista por defecto */
-        margin: 0;
-        padding: 0;
-        display: flex; /* Usa flexbox para alinear los elementos */
-        justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    & ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
         & li {
-            padding: 10px 15px;
             & a {
-                color: var(--black);
-                font-family: "Montserrat", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 600;
-                font-style: normal;
                 text-decoration: none;
+                color: var(--black);
             }
         }
     }
 }
+
 
 #signup {
     margin-left: auto;
