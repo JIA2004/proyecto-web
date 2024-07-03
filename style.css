@@ -114,6 +114,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    margin: 5px;
     padding: 20px 10px;
     position: relative;
     z-index: 1;
@@ -128,6 +129,13 @@ nav {
             }
         }
     }
+    & .options {
+        margin-right: 50%;
+        margin-top: 10px;
+    }
+    & .login {
+        margin-top: 5px;
+    }
 }
 
 .signup {
@@ -141,12 +149,11 @@ nav {
     height: 42.59px;
     padding: 15px 25px;
     text-decoration: none;
-    width: 91.44px;
+    width: 91.44px;     
 }
 
 .util {
     position: absolute;
-    top: 0;
     left: 1110px;
     top: -230px;
     width: 960px;
